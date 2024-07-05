@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Survay Page</title>
+    </head>
+    <body>
+        <div class="survay-container">
+            <div class="Survay-content" id="survey1">
+                <div class="survey">
+                    <h1 class="survey-tile">Welcome to survey</h1>
+                    <h3 class="survey-subtile">Hello, Human</h3>
+                    <div class="survey-details">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit.
+                            Doloremque quisquam nam aliquam reiciendis mollitia
+                            enim
+                            dolor reprehenderit non dolorem vel beatae voluptas
+                            fugit architecto dignissimos voluptate eligendi
+                            repellendus placeat error quasi, delectus saepe,
+                            nihil
+                            suscipit cupiditate itaque? <br /> Commodi suscipit
+                            expedita
+                            est, ea quasi temporibus sunt corporis in, nesciunt
+                            possimus amet aperiam. Modi cum perspiciatis
+                            delectus
+                            voluptas illum enim totam quas. Lorem ipsum dolor
+                            sit amet, consectetur adipisicing elit. Quod,
+                            nemo?<br />Lorem ipsum dolor sit amet, consectetur
+                            adipisicing
+                            elit.
+                            Iusto aliquid expedita debitis, explicabo hic
+                            provident!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.
+                            Exercitationem, illo a. Dolores quod minus nihil
+                            ducimus
+                            totam natus, illo, adipisci enim perspiciatis
+                            molestias
+                            soluta at.</p>
+                    </div>
+                    <div class="show-survey">
+                        <p>You must fill all fields to be able to continue</p>
+                        <p><button class="survey-btn"
+                                    id="survey1">Next</button></p>
+                    </div>
+                    <div class="page">
+                        <p class="page-num">1<sup
+                                class="total-page">/9</sup></p>
+                    </div>
+                </div>
+            </div>
+            <div class="Survay-content hidden" id="survey2">
+                <div class="survey">
+                    <h1 class="survey-tile">Qouestion One</h1>
+                    <h3 class="survey-subtile">Lorem ipsum dolor, sit amet
+                        consectetur adipisicing
+                        elit.
+                        Doloremque quisquam nam aliquam reiciendis mollitia
+                        enim
+                        dolor reprehenderit non dolorem vel beatae voluptas
+                        fugit architecto dignissimos voluptate eligendi
+                        repellendus placeat error quasi, delectus saepe,
+                        nihil
+                        suscipit cupiditate itaque? Commodi suscipit
+                        expedita
+                        est, ea quasi temporibus sunt corporis in, nesciunt
+                        possimus amet aperiam. Modi cum perspiciatis
+                        delectus</h3>
+                    <div class="survey-details survey-field">
+                        <form class="activity-form">
+                            <div class="activity-data">
+                                <label for class="field-title">Choose an
+                                    activity</label>
+                                <select class="input-field">
+                                    <option value>
+                                        Select an activity
+                                    </option>
+                                    <option value>
+                                        Written Task
+                                    </option>
+                                    <option value>
+                                        Desing Page
+                                    </option>
+                                </select>
+                                <select class="input-field">
+                                    <option value>
+                                        Select an activity
+                                    </option>
+                                    <option value>
+                                        Written Task
+                                    </option>
+                                    <option value>
+                                        Desing Page
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="frequency">
+                                <label for class="field-title">Choose
+                                    frequency</label>
+                                <div>
+                                    <select class="input-field">
+                                        <option value>
+                                            Select frequency
+                                        </option>
+                                        <option value>
+                                            Written Task
+                                        </option>
+                                        <option value>
+                                            Desing Page
+                                        </option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select class="input-field">
+                                        <option value>
+                                            Select an activity
+                                        </option>
+                                        <option value>
+                                            Written Task
+                                        </option>
+                                        <option value>
+                                            Desing Page
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="cross-btn">x</p>
+                            </div>
+                        </form>
+
+                        <p class="add-btn"><button
+                                class="survey-btn add-activity-btn">Add a new
+                                activity</button></p>
+
+                    </div>
+                    <div class="show-survey show-survey-btn">
+
+                        <p><button class="survey-btn">Next</button></p>
+                    </div>
+                    <div class="page">
+                        <p class="page-num">2<sup
+                                class="total-page">/9</sup></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const survey = document.getElementById("survey1")
+            survey.addEventListener("click", ()=>{
+
+                document.getElementById('survey2').classList.remove('hidden');
+                document.getElementById('survey2').classList.add('visible');
+                document.getElementById('survey1').classList.add('hidden');
+            })
+        </script>
+    </body>
+</html>

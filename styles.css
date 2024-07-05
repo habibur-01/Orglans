@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.banner {
+    background: url("./images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-content {
+    width: 600px;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+
+.banner-description {
+    line-height: 24px;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: yellow;
+    margin-top: 40px;
+
+}
+
+.btn:hover {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    background-color: lightyellow;
+    height: 100%;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.content-box {
+    flex-grow: 1;
+    margin: 40px 60px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: blue;
+    font-weight: 800;
+}
+
+.order-list {
+    list-style-type: decimal;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.order-list li {
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+.order-list li::marker {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.article-title {
+    font-size: 32px;
+}
+
+.article-details {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 600px;
+}
+
+.article-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: green;
+    margin-top: 40px;
+    color: white;
+}
+
+.article-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.article-btn a:hover {
+    color: red;
+}
+
+.article-btn:hover {
+    background: transparent;
+    color: red;
+    cursor: pointer;
+}
+
+.article-btn a:visited {
+    color: purple;
+}
+
+/* second question */
+.second-container {
+    background-color: rgba(63, 60, 60, 0.5);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-content {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(124, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* fourth problem */
+.survay-container {
+    background: url("./images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Survay-content {
+    width: 70%;
+    height: 800px;
+    background-color: beige;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.survey {
+    width: 80%;
+}
+
+.survey-tile {
+    color: rgb(124, 124, 238);
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.survey-subtile {
+    color: rgb(245, 88, 88);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.survey-details p {
+    font-size: 14px;
+    margin-bottom: 14px;
+    line-height: 20px;
+}
+
+.show-survey {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+}
+
+.survey-btn {
+    padding: 10px 24px;
+    background-color: rgb(124, 124, 238);
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.survey-btn:hover {
+    cursor: pointer;
+
+}
+
+.page {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+}
+
+.add-btn {
+    text-align: center;
+}
+
+.add-activity-btn {
+    width: 30%;
+}
+
+.page-num {
+    font-size: 36px;
+    opacity: 0.5;
+}
+
+.total-page {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.hidden {
+    display: none;
+}
+
+.activity-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+}
+
+.input-field {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+.field-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.survey-details {
+    width: 100%;
+}
+
+.frequency {
+    width: 100%;
+}
+
+.activity-data {
+    width: 100%;
+}
+
+.show-survey-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.cross-btn {
+    position: absolute;
+    bottom: 10px;
+    right: -20px;
+    background-color: red;
+    color: white;
+    font-size: 26px;
+    padding: 4px 8px;
+
+
+}
+
+#survey2:target {
+    display: block;
+}
+
+/* responsive for mobile */
+@media screen and (max-width: 425px) {
+    .survay-container {
+        height: auto;
+
+    }
+
+    .Survay-content {
+        width: 90%;
+    }
+
+    .add-activity-btn {
+        width: 60%;
+    }
+
+    .banner-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .container{
+        display: block;
+    }
+    .navbar{
+        height: 60px;
+        width: 100%;
+        padding-top: 0%;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .order-list{
+        display: block;
+    }
+    .order-list li{
+        margin-left: 0%;
+        margin-bottom: 30px;
+    }
+    .article-title{
+        line-height: 5px;
+    }
+    .video iframe{
+        width: 300px;
+        height: 250px;
+    }
+    .article-details{
+        width: 350px;
+    }
+
+}
+@media screen and (min-width: 426px) and (max-width: 780px) {
+    .container{
+        display: block;
+    }
+    .navbar{
+        height: 60px;
+        width: 100%;
+        padding-top: 0%;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .article-title{
+        line-height: 40px;
+    }
+    .order-list li{
+        
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 781px) and (max-width: 1280px){
+    .navbar{
+        width: 600px;
+    }
+}
